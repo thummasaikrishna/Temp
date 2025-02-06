@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#container
+{
+    background-color: rgb(240, 150, 150);
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid  skyblue;
+}
+input
+{
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+}
+body
+{
+background-color: black;
+align-items: center;
+padding: 300px;
+padding-left: 500px;
+padding-top: 500px;
+}
+    </style>
+    <script>
+        function calc()
+        {
+            let v = Number(document.getElementById("n1").value)
+            let b = Number(document.getElementById("n2").value)
+            d1.innerHTML = `${v} + ${b} = ${v+b}`
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+    <p><input type="number" id="n1"></p>
+    <p><input type="number" id="n2"></p>
+    <p><button onclick="calc()">Submit</button></p>
+
+<div id="d1"></div>
+</div>
+</body>
+</html>

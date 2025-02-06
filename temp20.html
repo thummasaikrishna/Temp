@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+          <script>
+            function fun1()
+            {   
+                let number = document.getElementById("number").value;
+                let table="<table>";
+                for(let i=0;i<10;i++)
+            {
+                result+=`<tr><td>${number} * ${i} = ${number*i}<br></tr></td>`;
+                data.innerHTML = result;
+            }
+            }
+          </script>
+</head>
+<body>
+    <input type="number"id="number" placeholder="enter number">
+    <button onclick="fun1()">Submit</button>
+    <div id="data"></div>
+</body>
+</html>

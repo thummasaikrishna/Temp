@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container{
+        display: flex;
+        justify-content: center;
+      }
+      .box{
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+      }
+      </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      let products = [
+          {
+              id: 1,
+              name: "Laptop",
+              price: 1000,
+              quantity: 10,
+              desc: "Laptop with 8GB RAM and 1TB SSD",
+              url: "https://picsum.photos/id/1/200/300"
+          },
+          {
+              id: 2,
+              name: "Mobile",
+              price: 500,
+              quantity: 20,
+              desc: "Mobile with 4GB RAM and 64GB Storage",
+              url:"https://picsum.photos/id/2/200/300"
+          },
+          {
+              id: 3,
+              name: "Tablet",
+              price: 300,
+              quantity: 15,
+              desc: "Tablet with 2GB RAM and 32GB Storage",
+              url :"https://picsum.photos/id/3/200/300"
+          },
+      ];
+      //console.log(products[0]);
+      let len = products.length;
+      let str = "<div class = 'container'>";
+      for (let i = 0; i < len; i++) {
+          str += `<div class = 'box'>
+            <img src="${products[i].url}" alt="product" width="200" height="200">
+            <h2>${products[i].name}</h2>
+            <p>Price: ${products[i].desc}</p>
+            <h3>Quantity: ${products[i].quantity}</h3>
+           <h3>Price: ${products[i].price}</h3>
+            <button>Add to Cart</button>
+            </div>`;
+      }
+      str += '</div>';
+      root.innerHTML = str;
+    </script>
+  </body>
+</html>

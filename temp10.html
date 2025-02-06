@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f2()
+        {
+            let v=document.getElementById("same").value
+            if(v <= 30)
+        {
+            msg.innerHTML = "PASSED 'C' GRADE"
+        }
+        else if(v>= 30 && v<=60)
+        {
+            msg.innerHTML = "PASSED 'B' GRADE"
+        }
+        else if(v>= 60 && v<= 100)
+        {
+            msg.innerHTML = "PASSED 'A' GRADE"
+        }
+        else
+        {
+            msg.innerHTML = "ENTER VALID SCORE"
+        }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="same" placeholder="enter marks">
+    <button onclick="f2()">Submit</button>
+    <hr>
+    <div id="msg"></div>
+</body>
+</html>

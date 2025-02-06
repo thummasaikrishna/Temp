@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER SIGNUP</title>
+
+    <script>
+            function fun(){
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let DOB = document.getElementById("DOB").value;
+            data.innerHTML = `${name},${email},${password},${DOB}`
+            }
+    </script>
+</head>
+<body>
+    <div id="first">
+    <h1>NEW USER SIGNUP FORM</h1>
+    <input type="text" id="name" placeholder="Enter Name"><br><br>
+    <input type="email" id="email" placeholder="Enter Email"><br><br>
+    <input type="password" id="password" placeholder="Enter Password"><br><br>
+    <input type="date" id="DOB" placeholder="Enter DOB"><br><br>
+    <button onclick="fun()">Register</button>
+    <div id="data"></div>
+</div>
+</body>
+</html>
